@@ -39,7 +39,7 @@ Full R session and package versions are in [`sessionInfo.txt`](./sessionInfo.txt
   | Xbp1 | 0.727 | 1.39e-52 |
   | Hyou1 | 0.723 | 1.76e-57 |
 
-  (full ranked list in `results/tables/Top30_SD_vs_NSD_for_email.csv`)
+  (full ranked list in [`results/tables/Top30_SD_vs_NSD_for_email.csv`](./results/tables/Top30_SD_vs_NSD_for_email.csv))
 
 - Notable outliers: **Arc** (log2FC +2.92, immediate-early gene) strongly induced by sleep deprivation; **Cirbp** (log2FC -1.28, a core circadian cold-inducible RNA-binding protein) downregulated.
 - **Top enriched GO Biological Process terms** (by adjusted p-value):
@@ -55,24 +55,35 @@ Full R session and package versions are in [`sessionInfo.txt`](./sessionInfo.txt
   | GO:0031960 | Response to corticosteroid | 1.7e-06 | 43 |
   | GO:0048511 | Rhythmic process | 5.6e-06 | 66 |
 
-  (full table in `results/tables/GO_enrichment_BP_SD_vs_NSD.csv`)
+  (full table in [`results/tables/GO_enrichment_BP_SD_vs_NSD.csv`](./results/tables/GO_enrichment_BP_SD_vs_NSD.csv))
 
 - Together, these patterns suggest sleep deprivation activates a **stress-response and metabolic remodeling program** in cortex, layered on top of hypoxia-response, steroid-hormone, and circadian/rhythmic signaling.
 
 ## Figures
 
-| File | Description |
-|---|---|
-| `results/figures/PCA_log2CPM_cortex.pdf` | PCA of log2-CPM expression, samples colored by condition |
-| `results/figures/Volcano_SD_vs_NSD.pdf` | Volcano plot of SD vs. NSD differential expression |
-| `results/figures/Heatmap_top50_FDRgenes.pdf` | Heatmap of the top 50 genes by FDR |
-| `results/figures/Heatmap_top200_var_genes.pdf` | Heatmap of the top 200 most variable genes |
+**PCA of log2-CPM expression** (samples colored by condition)
+
+![PCA plot](./results/figures/png/PCA_log2CPM_cortex.png)
+
+**Volcano plot, SD vs. NSD**
+
+![Volcano plot](./results/figures/png/Volcano_SD_vs_NSD.png)
+
+**Heatmap, top 50 genes by FDR**
+
+![Heatmap top 50 FDR genes](./results/figures/png/Heatmap_top50_FDRgenes.png)
+
+**Heatmap, top 200 most variable genes**
+
+![Heatmap top 200 variable genes](./results/figures/png/Heatmap_top200_var_genes.png)
+
+Full-resolution, print-quality PDFs of all four figures are in [`results/figures/`](./results/figures/).
 
 ## Repository Structure
 
+```text
 .
 ├── README.md
-
 ├── sessionInfo.txt
 ├── results/
 │   ├── tables/
@@ -83,8 +94,14 @@ Full R session and package versions are in [`sessionInfo.txt`](./sessionInfo.txt
 │       ├── PCA_log2CPM_cortex.pdf
 │       ├── Volcano_SD_vs_NSD.pdf
 │       ├── Heatmap_top50_FDRgenes.pdf
-│       └── Heatmap_top200_var_genes.pdf
-└── scripts/                                            # analysis script(s), coming soon
+│       ├── Heatmap_top200_var_genes.pdf
+│       └── png/                                       # PNG previews, embedded above
+│           ├── PCA_log2CPM_cortex.png
+│           ├── Volcano_SD_vs_NSD.png
+│           ├── Heatmap_top50_FDRgenes.png
+│           └── Heatmap_top200_var_genes.png
+└── scripts/                                            
+```
 
 ## Acknowledgments
 
@@ -92,4 +109,4 @@ This analysis was completed in collaboration with the **Hogenesch Lab**, Divisio
 
 ## Author
 
-Hera Dashnyam ([GitHub](https://github.com/YOUR-USERNAME))
+Hera Dashnyam ([GitHub](https://github.com/MaralguaDashnyam))
