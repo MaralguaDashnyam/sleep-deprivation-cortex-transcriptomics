@@ -100,7 +100,7 @@ Full-resolution, print-quality PDFs of all four figures are in [`results/figures
 │           ├── Volcano_SD_vs_NSD.png
 │           ├── Heatmap_top50_FDRgenes.png
 │           └── Heatmap_top200_var_genes.png
-└── scripts/                                            # analysis script(s), coming soon
+└── scripts/                                            
 ```
 
 ## 🌷 Acknowledgments
